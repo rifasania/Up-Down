@@ -1,0 +1,18 @@
+1. File > Settings > Editor > GUI Designer, lalu ubah pengaturan Generate 
+GUI into dari Binary class files menjadi Java source code.
+
+2. Buat file mysql-connector-j-8.3.0.jar dan forms_rt.jar di folder lib
+
+3. Run MenuFrame (file yang ada form nya)
+
+4. Masukkan command berikut
+
+javac -cp ../lib/forms_rt.jar; model/*.java
+
+javac -cp ../lib/forms_rt.jar; view/*.java
+
+javac -cp ../lib/forms_rt.jar; viewmodel/*.java
+
+javac -cp ../lib/forms_rt.jar; Main.java
+
+java -cp ../lib/forms_rt.jar;../lib/mysql-connector-j-8.3.0.jar; Main
